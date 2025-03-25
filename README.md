@@ -39,6 +39,11 @@ Fig.2 Proposed methodological framework.
 
 ## 5.Results Visualization
 
+![Example Image](Fig/cwru_result.jpg)
+Fig.3 Result on CWRU dataset.
+
+![Example Image](Fig/seu_result.jpg)
+Fig.4 Result on SEU dataset.
 
 
 ## 6.Citation method of this paper repository
