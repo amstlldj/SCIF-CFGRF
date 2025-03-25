@@ -66,6 +66,7 @@ Fig.4 Result on SEU dataset.
 ![Example Image](Fig/Gif/br1_400_cwru/batch_7_image_0_diffusion_process.gif)
 ![Example Image](Fig/Gif/br1_400_cwru/batch_8_image_0_diffusion_process.gif)
 ![Example Image](Fig/Gif/br1_400_cwru/batch_9_image_0_diffusion_process.gif)
+
 Fig.5 GIF of the inference synthesis process on the CWRU dataset at BR1:400.
 
 ![Example Image](Fig/Gif/br1_5_cwru/batch_0_image_0_diffusion_process.gif)
@@ -73,7 +74,29 @@ Fig.5 GIF of the inference synthesis process on the CWRU dataset at BR1:400.
 ![Example Image](Fig/Gif/br1_5_cwru/batch_2_image_0_diffusion_process.gif)
 ![Example Image](Fig/Gif/br1_5_cwru/batch_3_image_0_diffusion_process.gif)
 ![Example Image](Fig/Gif/br1_5_cwru/batch_4_image_0_diffusion_process.gif)
+
 Fig.6 GIF of the inference synthesis process on the CWRU dataset at BR1:5.
+
+![Example Image](Fig/Gif/br1_400_seu/batch_0_image_0_diffusion_process.gif)
+![Example Image](Fig/Gif/br1_400_seu/batch_1_image_0_diffusion_process.gif)
+![Example Image](Fig/Gif/br1_400_seu/batch_2_image_0_diffusion_process.gif)
+![Example Image](Fig/Gif/br1_400_seu/batch_3_image_0_diffusion_process.gif)
+![Example Image](Fig/Gif/br1_400_seu/batch_4_image_0_diffusion_process.gif)
+![Example Image](Fig/Gif/br1_400_seu/batch_5_image_0_diffusion_process.gif)
+![Example Image](Fig/Gif/br1_400_seu/batch_6_image_0_diffusion_process.gif)
+![Example Image](Fig/Gif/br1_400_seu/batch_7_image_0_diffusion_process.gif)
+![Example Image](Fig/Gif/br1_400_seu/batch_8_image_0_diffusion_process.gif)
+![Example Image](Fig/Gif/br1_400_seu/batch_9_image_0_diffusion_process.gif)
+
+Fig.7 GIF of the inference synthesis process on the SEU dataset at BR1:400.
+
+![Example Image](Fig/Gif/br1_5_seu/batch_0_image_0_diffusion_process.gif)
+![Example Image](Fig/Gif/br1_5_seu/batch_1_image_0_diffusion_process.gif)
+![Example Image](Fig/Gif/br1_5_seu/batch_2_image_0_diffusion_process.gif)
+![Example Image](Fig/Gif/br1_5_seu/batch_3_image_0_diffusion_process.gif)
+![Example Image](Fig/Gif/br1_5_seu/batch_4_image_0_diffusion_process.gif)
+
+Fig.8 GIF of the inference synthesis process on the SEU dataset at BR1:5.
 
 
 ## 6.Citation method of this paper repository
