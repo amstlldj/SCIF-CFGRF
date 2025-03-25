@@ -16,7 +16,6 @@ Replace the downloaded checkpoint folder with the downloaded checkpoint folder, 
 ###
 Bearings are vital in industrial machinery, making fault diagnosis a crucial research area. However, the rarity of fault conditions leads to highly imbalanced signal data, biasing traditional methods toward normal states. To address this, we propose SCQ-CFGRF, a novel classifier-free guidance Rectified Flow generative model that integrates a specially designed Residual Seaformer, a novel Continuous Wavelet Transform-based feature extractor, and a creative Quality Enhancer. Unlike existing methods, SCQ-CFGRF transforms raw time-domain signals into richer time-frequency representations while leveraging Rectified Flow for superior sample quality and inference efficiency. Our approach first converts 1D time-domain data into 2D time-frequency heatmaps via a novel CFEN-block. Simultaneously, Rectified Flow is constructed to extract high-dimensional features. These are processed by a UNet backbone embedded with our RS-block to enhance feature representation. Category labels and time steps are fused to establish conditional dependencies, improving global spatiotemporal perception and enabling classifier-free guidance. Finally, our trained model employs a sampler with a QE-block to refine sample quality and perform synthesis via the Euler method of Rectified Flow. Experiments on two real-world bearing datasets and ablation studies demonstrate SCQ-CFGRF’s superiority in synthesis quality and inference speed. Even under an extreme 1:400 class imbalance, it achieves 78.75\% to 81.15\% diagnostic accuracy, surpassing existing methods. 
 ###
-To address the limitations of mainstream methods, we propose SCQ-CFGRF, a novel classifier-free guidance Rectified Flow generative model. It uniquely integrates an advanced specially designed residual seaformer, a custom continuous wavelet transform-based feature extractor, and a novel quality enhancer. Our approach leverages the high-quality generation capability of diffusion models while incorporating Rectified Flow method for fast synthesis and robust generalization in industrial applications.
 The key contributions of this study are as follows:
 
 (1) We propose a new SCQ-CFGRF method framework, which introduces Rectified Flow into the field of fault diagnosis data synthesis for the first time and achieves fast, stable and high-quality synthesis of fault data samples. Meanwhile, two real-world experiments and ablation experiments demonstrate the superiority of our method.
@@ -27,7 +26,14 @@ The key contributions of this study are as follows:
 
 (4) We fuse conditional and time step information throughout the network to strengthen conditional dependencies and global spatiotemporal perception, enabling classifier-free guidance. Additionally, our newly designed Quality Enhancer block (QE-block) refines final samples using a Cosine Similarity-based enhancement mechanism, improving synthesis quality and efficiency.
 
-## 4.Citation method of this paper repository
+## 4.Schematic diagram of the structure of SCQ-CFGRF and the framework of the entire method
+
+
+## 5.Results Visualization
+
+
+
+## 6.Citation method of this paper repository
 ###
 @misc{SCQ-CFGRF,
   author = {Hongliang Dai, Dongjie Lin, Junpu He, Xinyu Fang, Siting Huang},
