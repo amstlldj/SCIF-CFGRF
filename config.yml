@@ -1,0 +1,154 @@
+### model params
+Model:
+  in_channels: 3
+  out_channels: 3
+  model_channels: 128
+  attention_resolutions: [2, ]
+  num_res_blocks: 2
+  dropout: 0.1
+  channel_mult: [1, 2, 2, 2]
+  conv_resample: True
+  num_heads: 8
+  # CWRU is 10, SEU is 5
+  num_classes: 10
+  # If mnist dataset, image_size is [28, 28]. If cifar dataset, image_size is [32, 32]. If custom, specify as needed.
+  # If cwru Or seu dataset, image_size is [32, 32], too.
+  # If jet dataset demo or monkey dataset demo, image_size is [64, 64] or [32, 32].
+  image_w: 32
+  image_h: 32
+
+### model params
+Classifier_Model:
+  # CWRU is 10, SEU is 5
+  num_classes: 10 
+
+### dataset params
+Dataset:
+  # Deciding which dataset to use, must be one of {'mnist', 'cifar', 'custom', 'cwru', 'seu', 'jet', 'monkey'}.
+  dataset: "cwru"
+  # If mnist and cifar datasets, whether to use the training set.
+  train: True
+  # Folder of data sets. When `dataset = custom`, this parameter can be a list with different folders.
+  # Then all images in the list with suffixes in `suffix` in the folder will be loaded.
+  data_path: "./data/cwru/BR1_200_train_set_balance" # demo
+  # If mnist and cifar datasets, whether to download it.
+  download: False
+  # If mnist dataset, image_size is [28, 28]. If cifar dataset, image_size is [32, 32]. If custom, specify as needed.
+  # If jet dataset demo, image_size is [64, 64].
+  image_size: [ 32, 32 ]
+  # If custom dataset, what is the mode of the image. must be one of {'RGB', 'L', 'CMYK'}.
+  mode: "RGB"
+  # If custom dataset, decide what suffix to load for the image.
+  suffix: ["png", "jpg"]
+  # parameters for torch.utils.data.DataLoader
+  batch_size: 64 # 1：400 uses 32, jet uses 16, others use 64
+  shuffle: True
+  drop_last: True
+  pin_memory: True
+  num_workers: 4
+
+### classifier dataset params
+Classifier_Dataset_train:
+  # Deciding which dataset to use, must be 'classifier_train'.
+  dataset: "classifier_train"
+  # Folder of data sets. When `dataset = custom`, this parameter can be a list with different folders.
+  # Then all images in the list with suffixes in `suffix` in the folder will be loaded.
+  train_data_path: "./data/cwru_rf_result/cwru_sampler_br1_5_500epoch"
+  # If mnist dataset, image_size is [28, 28]. If cifar dataset, image_size is [32, 32]. If custom, specify as needed.
+  image_size: [ 32, 32 ]
+  # If custom dataset, what is the mode of the image. must be one of {'RGB', 'L', 'CMYK'}.
+  mode: "RGB"
+  # If custom dataset, decide what suffix to load for the image.
+  suffix: ["png", "jpg"]
+  # parameters for torch.utils.data.DataLoader
+  batch_size: 64 
+  drop_last: True
+  pin_memory: True
+  num_workers: 4
+
+### classifier dataset params
+Classifier_Dataset_test:
+  # Deciding which dataset to use, must be 'classifier_test'.
+  dataset: "classifier_test"
+  # Folder of data sets. When `dataset = custom`, this parameter can be a list with different folders.
+  # Then all images in the list with suffixes in `suffix` in the folder will be loaded.
+  test_data_path: "./data/cwru/test_set"
+  # If mnist dataset, image_size is [28, 28]. If cifar dataset, image_size is [32, 32]. If custom, specify as needed.
+  image_size: [ 32, 32 ]
+  # If custom dataset, what is the mode of the image. must be one of {'RGB', 'L', 'CMYK'}.
+  mode: "RGB"
+  # If custom dataset, decide what suffix to load for the image.
+  suffix: ["png", "jpg"]
+  # parameters for torch.utils.data.DataLoader
+  batch_size: 64 # 1：400 uses 32, others use 64
+  drop_last: True
+  pin_memory: True
+  num_workers: 4
+  
+### list dataset params
+ListDataset:
+  # Deciding which dataset to use, must be one of {'list'}.
+  dataset: "list"
+  # Folder of data sets. When `dataset = custom`, this parameter can be a list with different folders.
+  # Then all images in the list with suffixes in `suffix` in the folder will be loaded.
+  data_path: "./checkpoint/cwru_rf/match_list.pth"
+  batch_size: 1 # 批次大小，默认为1，代表只读入列表中的第一个元素，元素形状为（batch_size,3,32,32）
+  shuffle: False
+  drop_last: True
+  pin_memory: False
+  num_workers: 4
+
+### trainer params
+Trainer:
+  # sample time steps, DDIM is 1000（use the unet）, DDPM and DDIM（use the unet_dm_wcs，avoid to waste time） are 100 and 1000.
+  T: 1000 
+  beta: [0.0001, 0.02]
+
+### callback params
+Callback:
+  # The save path for ddim checkpoint.
+  filepath: "./checkpoint/cwru_ddpm/cwru_ddpm_br1_5_500epoch.pth"
+  # Frequency of checkpoint saving.
+  save_freq: 1
+
+### 1_rf callback params
+RF_Callback:
+  # The save path for ddim checkpoint.
+  filepath: "./checkpoint/cwru_rf/cwru_rf_br1_200_500epoch_demo.pth" # demo
+  # Frequency of checkpoint saving.
+  save_freq: 1
+
+### 2_rf callback params
+RF_2_Callback:
+  # The save path for ddim checkpoint.
+  filepath: "./checkpoint/cwru_rf_2/cwru_rf_2_br1_500epoch.pth"
+  # Frequency of checkpoint saving.
+  save_freq: 1
+
+### classifier callback params
+Cls_Callback:
+  # The save path for ddim checkpoint.
+  filepath: "./checkpoint/cwru_cls/cwru_cls_br1_5_vgg16.pth"
+  # Frequency of checkpoint saving.
+  save_freq: 1
+
+### train params
+device: "cuda:0"
+# cwru is 500, seu is 500
+epochs: 10 # demo 
+# Whether to continue training, True or False
+consume: False
+# Whether to continue training, True or False
+classifier_consume: False
+# If continue training, which checkpoint to load
+consume_path: "./checkpoint/cwru_ddpm/cwru_ddpm_br1_5_500epoch.pth"
+# If continue rf training, which checkpoint to load
+rf_consume_path: "./checkpoint/cwru_rf/cwru_rf_br1_5_500epoch.pth"
+# If continue classifier training, which checkpoint to load
+classifier_consume_path: "./checkpoint/cwru_cls/cwru_cls_br1_5_vgg16.pth"
+### optimizer params, cwru lr is 0.0001, seu lr is 0.0001
+lr: 0.0001 
+### 2_rf optimizer params
+lr_2: 0.00001
+### classifier optimizer params
+lr_cls: 0.0001
