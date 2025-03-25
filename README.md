@@ -49,7 +49,7 @@ Memory：32GB
 
 Solid State Drive：1TB
 
-It is recommended to use a higher configuration than this. The author's device uses shared memory to prevent video memory overflow. It is recommended that readers use devices with more than 12GB of video memory to prevent program crashes or reduced model performance.
+It is recommended to use a higher configuration than this. The author's device uses shared memory to prevent out of GPU memory. It is recommended that readers use devices with more than 12GB of GPU memory to prevent program crashes or reduced model performance.
 
 ## 6.Schematic diagram of the structure of SCQ-CFGRF and the framework of the entire method
 
