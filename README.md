@@ -7,12 +7,21 @@ The code files of this repository are still being uploaded recently, and the wei
 ### 1.2 update
 We have uploaded the weight files, which can be downloaded and used at the link. At the same time, each folder has a brief introduction, which can be seen in the Readme in each folder.(2025-3-25)
 
-## 2.Weight file download link
+## 2.Weight file download link and instructions
 ###
 To ensure the credibility of our paper, we decided to provide the pre-trained weight files of our model, and also to facilitate readers to directly complete image data synthesis by loading our weight files into the generator file.
 Our model pre-trained weight files can be obtained from this link:
 https://drive.google.com/drive/folders/1-nT8oyWBRETIntGGdyILk6AqfBFtFGXD?usp=drive_link
 Replace the downloaded checkpoint folder with the downloaded checkpoint folder, and then load the corresponding .pth file in the folder in the generator to run and synthesize data.
+
+## 3.Brief Instructions
+### 3.1 dl.yaml
+dl.yaml: This file contains all the environment configurations required for this project. You can use this file in conda to quickly deploy a virtual environment that can run our project.
+### 3.2 config.yaml
+config.yaml: This file contains the training and generation parameter configurations of the train.ipynb and generator.ipynb files, which can be adjusted according to your needs.
+### 3.3 train.ipynb and generator.ipynb
+train.ipynb: This file can be used to train your model, but the data needs to be adjusted to a level acceptable to the model.py and dataset folders. The specific resolution should be adjusted according to the individual device, and 32x32 pixel images are recommended.
+generator.ipynb: This file is used to load and synthesize pre-trained files.
 
 ## 3.Abstracts of the papers to which this repository belongs
 ###
