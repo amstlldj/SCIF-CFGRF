@@ -8,10 +8,9 @@ The code files of this repository are still being uploaded recently, and the wei
 ## 2.Weight file download link
 ###
 To ensure the credibility of our paper, we decided to provide the pre-trained weight files of our model, and also to facilitate readers to directly complete image data synthesis by loading our weight files into the generator file.
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Our model pre-trained weight files can be obtained from this link:
 https://drive.google.com/drive/folders/1-nT8oyWBRETIntGGdyILk6AqfBFtFGXD?usp=drive_link
 Replace the downloaded checkpoint folder with the downloaded checkpoint folder, and then load the corresponding .pth file in the folder in the generator to run and synthesize data.
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
