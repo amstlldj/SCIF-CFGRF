@@ -30,10 +30,12 @@ The key contributions of this study are as follows:
 In the future, we plan to test our method on additional industrial equipment, such as aircraft engines, chillers, and gearboxes. Moreover, we aim to explore its application in the financial sector for related research.
 
 ## 4.Schematic diagram of the structure of SCQ-CFGRF and the framework of the entire method
-### Fig.1 SCQ-CFGRF model and each block structure diagram.
+
 ![Example Image](Fig/SCQ-CFGRF-blocks.jpg)
-### Fig.2 Proposed methodological framework.
+Fig.1 SCQ-CFGRF model and each block structure diagram.
+
 ![Example Image](Fig/SCQ-CFGRF.jpg)
+Fig.2 Proposed methodological framework.
 
 ## 5.Results Visualization
 
