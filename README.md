@@ -23,7 +23,7 @@ config.yaml: This file contains the training and generation parameter configurat
 train.ipynb: This file can be used to train your model, but the data needs to be adjusted to a level acceptable to the model.py and dataset folders. The specific resolution should be adjusted according to the individual device, and 32x32 pixel images are recommended.
 generator.ipynb: This file is used to load and synthesize pre-trained files.
 
-## 3.Abstracts of the papers to which this repository belongs
+## 4.Abstracts of the papers to which this repository belongs
 ###
 Bearings are vital in industrial machinery, making fault diagnosis a crucial research area. However, the rarity of fault conditions leads to highly imbalanced signal data, biasing traditional methods toward normal states. To address this, we propose SCQ-CFGRF, a novel classifier-free guidance Rectified Flow generative model that integrates a specially designed Residual Seaformer, a novel Continuous Wavelet Transform-based feature extractor, and a creative Quality Enhancer. Unlike existing methods, SCQ-CFGRF transforms raw time-domain signals into richer time-frequency representations while leveraging Rectified Flow for superior sample quality and inference efficiency. Our approach first converts 1D time-domain data into 2D time-frequency heatmaps via a novel CFEN-block. Simultaneously, Rectified Flow is constructed to extract high-dimensional features. These are processed by a UNet backbone embedded with our RS-block to enhance feature representation. Category labels and time steps are fused to establish conditional dependencies, improving global spatiotemporal perception and enabling classifier-free guidance. Finally, our trained model employs a sampler with a QE-block to refine sample quality and perform synthesis via the Euler method of Rectified Flow. Experiments on two real-world bearing datasets and ablation studies demonstrate SCQ-CFGRF’s superiority in synthesis quality and inference speed. Even under an extreme 1:400 class imbalance, it achieves 78.75\% to 81.15\% diagnostic accuracy, surpassing existing methods. 
 ###
@@ -40,7 +40,7 @@ The key contributions of this study are as follows:
 ###
 In the future, we plan to test our method on additional industrial equipment, such as aircraft engines, chillers, and gearboxes. Moreover, we aim to explore its application in the financial sector for related research.
 
-## 4.Schematic diagram of the structure of SCQ-CFGRF and the framework of the entire method
+## 5.Schematic diagram of the structure of SCQ-CFGRF and the framework of the entire method
 
 ![Example Image](Fig/SCQ-CFGRF-blocks.jpg)
 Fig.1 SCQ-CFGRF model and each block structure diagram.
