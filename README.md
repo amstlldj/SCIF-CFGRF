@@ -26,6 +26,9 @@ The key contributions of this study are as follows:
 
 (4) We fuse conditional and time step information throughout the network to strengthen conditional dependencies and global spatiotemporal perception, enabling classifier-free guidance. Additionally, our newly designed Quality Enhancer block (QE-block) refines final samples using a Cosine Similarity-based enhancement mechanism, improving synthesis quality and efficiency.
 
+###
+In the future, we plan to test our method on additional industrial equipment, such as aircraft engines, chillers, and gearboxes. Moreover, we aim to explore its application in the financial sector for related research.
+
 ## 4.Schematic diagram of the structure of SCQ-CFGRF and the framework of the entire method
 
 
