@@ -71,3 +71,8 @@ If your paper, research or project uses our research, please use this latex cita
 }
 
 If you plagiarize our research, we will pursue legal action.
+
+## 7.Contact us for cooperation or consultation
+###
+If you have any questions, please contact the author's work email or leave a message in issues. The author will try his best to answer them at his convenience.If you are interested in seeking cooperation, you can also consult this email.
+Author contact email: 2112464120@e.gzhu.edu.cn
