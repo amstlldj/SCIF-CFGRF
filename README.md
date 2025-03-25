@@ -40,7 +40,14 @@ The key contributions of this study are as follows:
 ###
 In the future, we plan to test our method on additional industrial equipment, such as aircraft engines, chillers, and gearboxes. Moreover, we aim to explore its application in the financial sector for related research.
 
-## 5.Schematic diagram of the structure of SCQ-CFGRF and the framework of the entire method
+## 5.Recommended hardware equipment
+CPU recommendation: i7-14650HX(Laptop)
+GPU recommendation: RTX-4060(8GB)(Laptop)
+Memory：32GB
+Solid State Drive：1TB
+It is recommended to use a higher configuration than this. The author's device uses shared memory to prevent video memory overflow. It is recommended that readers use devices with more than 12GB of video memory to prevent program crashes or reduced model performance.
+
+## 6.Schematic diagram of the structure of SCQ-CFGRF and the framework of the entire method
 
 ![Example Image](Fig/SCQ-CFGRF-blocks.jpg)
 Fig.1 SCQ-CFGRF model and each block structure diagram.
@@ -48,7 +55,7 @@ Fig.1 SCQ-CFGRF model and each block structure diagram.
 ![Example Image](Fig/SCQ-CFGRF.jpg)
 Fig.2 Proposed methodological framework.
 
-## 5.Results Visualization
+## 7.Results Visualization
 
 ![Example Image](Fig/cwru_result.jpg)
 Fig.3 Result on CWRU dataset.
@@ -99,7 +106,7 @@ Fig.7 GIF of the inference synthesis process on the SEU dataset at BR1:400.
 Fig.8 GIF of the inference synthesis process on the SEU dataset at BR1:5.
 
 
-## 6.Citation method of this paper repository
+## 8.Citation method of this paper repository
 ###
 If your paper, research or project uses our research, please use this latex citation format:
 
