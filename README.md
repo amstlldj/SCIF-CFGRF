@@ -12,5 +12,8 @@ Our model pre-trained weight files can be obtained from this link:
 https://drive.google.com/drive/folders/1-nT8oyWBRETIntGGdyILk6AqfBFtFGXD?usp=drive_link
 Replace the downloaded checkpoint folder with the downloaded checkpoint folder, and then load the corresponding .pth file in the folder in the generator to run and synthesize data.
 
+## 3.Abstract
+
+
 
 
