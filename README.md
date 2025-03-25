@@ -48,6 +48,8 @@ Fig.4 Result on SEU dataset.
 
 ## 6.Citation method of this paper repository
 ###
+If your paper, research or project uses our research, please use this latex citation format:
+
 @misc{SCQ-CFGRF,
   author = {Hongliang Dai, Dongjie Lin, Junpu He, Xinyu Fang, Siting Huang},
   title = {SCQ-CFGRF},
