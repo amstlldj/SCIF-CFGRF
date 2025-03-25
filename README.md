@@ -70,4 +70,4 @@ If your paper, research or project uses our research, please use this latex cita
   url = {(https://github.com/amstlldj/SCQ-CFGRF}
 }
 
-
+If you plagiarize our research, we will pursue legal action.
