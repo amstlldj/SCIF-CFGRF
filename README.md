@@ -56,6 +56,16 @@ Fig.3 Result on CWRU dataset.
 ![Example Image](Fig/seu_result.jpg)
 Fig.4 Result on SEU dataset.
 
+![Example Image](Fig/Gif/br1_400_cwru/batch_0_image_0_diffusion_process.gif)
+![Example Image](Fig/Gif/br1_400_cwru/batch_1_image_0_diffusion_process.gif)
+![Example Image](Fig/Gif/br1_400_cwru/batch_2_image_0_diffusion_process.gif)
+![Example Image](Fig/Gif/br1_400_cwru/batch_3_image_0_diffusion_process.gif)
+![Example Image](Fig/Gif/br1_400_cwru/batch_4_image_0_diffusion_process.gif)
+![Example Image](Fig/Gif/br1_400_cwru/batch_5_image_0_diffusion_process.gif)
+![Example Image](Fig/Gif/br1_400_cwru/batch_6_image_0_diffusion_process.gif)
+![Example Image](Fig/Gif/br1_400_cwru/batch_7_image_0_diffusion_process.gif)
+![Example Image](Fig/Gif/br1_400_cwru/batch_8_image_0_diffusion_process.gif)
+![Example Image](Fig/Gif/br1_400_cwru/batch_9_image_0_diffusion_process.gif)
 
 ## 6.Citation method of this paper repository
 ###
