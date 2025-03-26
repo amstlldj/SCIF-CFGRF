@@ -120,8 +120,7 @@ If your paper, research or project uses our research, please use this latex cita
   year = {2025},
   publisher = {Zenodo},
   doi = {10.5281/zenodo.15083611},
-  url = {https://github.com/amstlldj/SCQ-CFGRF
-}
+  url = {https://github.com/amstlldj/SCQ-CFGRF}
 
 If you plagiarize our research, we will pursue legal action.
 
