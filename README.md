@@ -124,6 +124,13 @@ If your paper, research or project uses our research, please use this latex cita
 
 If you plagiarize our research, we will pursue legal action.
 
+## 9.Subsequent plans for this code repository
+###
+We will continue to improve the code comments of the project later
+
+## 10.Our other projects
+### 10.1 DSEA-SMOTE
+You can also follow our other fault data synthesis project DSEA-SMOTE (https://github.com/amstlldj/DSEA-SMOTE).The project will also be updated and maintained in the future.
 ## 7.Contact us for cooperation or consultation
 ###
 If you have any questions, please contact the author's work email or leave a message in issues. The author will try his best to answer them at his convenience.If you are interested in seeking cooperation, you can also consult this email.
