@@ -130,7 +130,7 @@ We will continue to improve the code comments of the project later.
 
 ## 10.Our other projects
 ### 10.1 DSEA-SMOTE
-You can also follow our other fault data synthesis project DSEA-SMOTE (https://github.com/amstlldj/DSEA-SMOTE).The project will also be updated and maintained in the future.
+You can also follow our other fault data synthesis project DSEA-SMOTE (https://github.com/amstlldj/DSEA-SMOTE). The project will also be updated and maintained in the future.
 
 ## 11.Contact us for cooperation or consultation
 ###
