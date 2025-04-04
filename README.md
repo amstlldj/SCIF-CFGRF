@@ -122,6 +122,28 @@ If your paper, research or project uses our research, please use this latex cita
   doi = {10.5281/zenodo.15083611},
   url = {https://github.com/amstlldj/SCQ-CFGRF}
 
+or
+
+@software{amstlldj_2025_15083611,
+  author       = {Hongliang Dai, Dongjie Lin, Junpu He, Xinyu Fang, Siting Huang},
+  title        = {amstlldj/SCQ-CFGRF: Data Augmentation for Bearing
+                   Fault Diagnosis Using a Novel Flow-Based
+                   Generative Model
+                  },
+  month        = mar,
+  year         = 2025,
+  publisher    = {Zenodo},
+  version      = {v1.0.0},
+  doi          = {10.5281/zenodo.15083611},
+  url          = {https://doi.org/10.5281/zenodo.15083611},
+  swhid        = {swh:1:dir:f69d22d49556a2f0b882c1d34b8a1000e92fd8e4
+                   ;origin=https://doi.org/10.5281/zenodo.15083610;vi
+                   sit=swh:1:snp:09a80b47e4c679e71b90b4020f498667ee45
+                   bdbd;anchor=swh:1:rel:5fe1544ec3cdd61acd4dd183cbca
+                   44643218d6c5;path=amstlldj-SCQ-CFGRF-76a8de6
+                  },
+}
+
 If you plagiarize our research, we will pursue legal action.
 
 ## 9.Subsequent plans for this code repository
