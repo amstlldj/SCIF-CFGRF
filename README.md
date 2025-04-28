@@ -109,6 +109,9 @@ Fig.7 GIF of the inference synthesis process on the SEU dataset at BR1:400.
 
 Fig.8 GIF of the inference synthesis process on the SEU dataset at BR1:5.
 
+![Example Image](Fig/time-3.bmp)
+
+Fig.8 Inference process efficiency comparison. (From top to bottom: SCQ-CFGRF, DDPM, DDIM.)
 
 ## 8.Citation method of this paper repository
 ###
