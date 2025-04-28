@@ -1,4 +1,4 @@
-# SCQ-CFGRF(Initial title of the paper:"Data Augmentation for Bearing Fault Diagnosis Using a Novel Flow-Based Generative Model")
+# SCQ-CFGRF(Initial title of the paper:"Data Augmentation for Bearing Fault Diagnosis Using a Novel Flow-Based Generative Model for Information Fusion")
 
 ## 1.Copyright statement and update plan
 ### 1.1 Copyright statement and update plan
