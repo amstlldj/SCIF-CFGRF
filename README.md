@@ -53,10 +53,10 @@ It is recommended to use a higher configuration than this. The author's device u
 
 ## 6.Schematic diagram of the structure of SCIF-CFGRF and the framework of the entire method
 
-![Example Image](Fig/SCIF-CFGRF-blocks.jpg)
+![Example Image](Fig/SCQ-CFGRF-blocks.jpg)
 Fig.1 SCIF-CFGRF model and each block structure diagram.
 
-![Example Image](Fig/SCIF-CFGRF.jpg)
+![Example Image](Fig/SCQ-CFGRF.jpg)
 Fig.2 Proposed methodological framework.
 
 ## 7.Results Visualization
