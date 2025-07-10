@@ -104,7 +104,7 @@ Fig.2 CFEN-block structure diagram.
 ![Example Image](Fig/RS-1.bmp)
 Fig.3 RS-block structure diagram.
 
-![Example Image](Fig/Fig/SCIF-CFGRF_method_framework_1.pdf)
+![Example Image](Fig/SCIF-CFGRF_method_framework_1(1).bmp)
 Fig.4 Proposed methodological framework.
 
 ## 7.Results Visualization
@@ -126,7 +126,7 @@ Fig.6 Result on SEU dataset.
 ![Example Image](Fig/Gif/br1_400_cwru/batch_8_image_0_diffusion_process.gif)
 ![Example Image](Fig/Gif/br1_400_cwru/batch_9_image_0_diffusion_process.gif)
 
-Fig.5 GIF of the inference synthesis process on the CWRU dataset at BR1:400.
+Fig.7 GIF of the inference synthesis process on the CWRU dataset at BR1:400.
 
 ![Example Image](Fig/Gif/br1_5_cwru/batch_0_image_0_diffusion_process.gif)
 ![Example Image](Fig/Gif/br1_5_cwru/batch_1_image_0_diffusion_process.gif)
@@ -139,7 +139,7 @@ Fig.5 GIF of the inference synthesis process on the CWRU dataset at BR1:400.
 ![Example Image](Fig/Gif/br1_5_cwru/batch_8_image_0_diffusion_process.gif)
 ![Example Image](Fig/Gif/br1_5_cwru/batch_9_image_0_diffusion_process.gif)
 
-Fig.6 GIF of the inference synthesis process on the CWRU dataset at BR1:5.
+Fig.8 GIF of the inference synthesis process on the CWRU dataset at BR1:5.
 
 ![Example Image](Fig/Gif/br1_400_seu/batch_0_image_0_diffusion_process.gif)
 ![Example Image](Fig/Gif/br1_400_seu/batch_1_image_0_diffusion_process.gif)
@@ -147,7 +147,7 @@ Fig.6 GIF of the inference synthesis process on the CWRU dataset at BR1:5.
 ![Example Image](Fig/Gif/br1_400_seu/batch_3_image_0_diffusion_process.gif)
 ![Example Image](Fig/Gif/br1_400_seu/batch_4_image_0_diffusion_process.gif)
 
-Fig.7 GIF of the inference synthesis process on the SEU dataset at BR1:400.
+Fig.9 GIF of the inference synthesis process on the SEU dataset at BR1:400.
 
 ![Example Image](Fig/Gif/br1_5_seu/batch_0_image_0_diffusion_process.gif)
 ![Example Image](Fig/Gif/br1_5_seu/batch_1_image_0_diffusion_process.gif)
@@ -155,11 +155,11 @@ Fig.7 GIF of the inference synthesis process on the SEU dataset at BR1:400.
 ![Example Image](Fig/Gif/br1_5_seu/batch_3_image_0_diffusion_process.gif)
 ![Example Image](Fig/Gif/br1_5_seu/batch_4_image_0_diffusion_process.gif)
 
-Fig.8 GIF of the inference synthesis process on the SEU dataset at BR1:5.
+Fig.10 GIF of the inference synthesis process on the SEU dataset at BR1:5.
 
-![Example Image](Fig/time-3.bmp)
+![Example Image](Fig/time-series-4.bmp)
 
-Fig.8 Inference process efficiency comparison. (From top to bottom: SCIF-CFGRF, DDPM, DDIM.)
+Fig.11 Inference process efficiency comparison. (From top to bottom: SCIF-CFGRF, DDPM, DDIM.)
 
 ## 8.Citation method of this paper repository
 ###
