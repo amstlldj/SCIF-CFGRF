@@ -1,4 +1,4 @@
-# SCQ-CFGRF(Initial title of the paper:"Data Augmentation for Bearing Fault Diagnosis Using a Novel Flow-Based Generative Model for Information Fusion")
+# SCIF-CFGRF(Initial title of the paper:"Data Augmentation for Bearing Fault Diagnosis Using a Novel Flow-Based Generative Model for Information Fusion")
 
 ## 1.Copyright statement and update plan
 ### 1.1 Copyright statement and update plan
@@ -25,13 +25,13 @@ generator.ipynb: This file is used to load and synthesize pre-trained files.
 
 ## 4.Abstracts of the papers to which this repository belongs
 ###
-Bearings are vital in industrial machinery, making fault diagnosis a crucial research area. However, the rarity of fault conditions leads to highly imbalanced signal data, biasing traditional methods toward normal states. To address this, we propose SCQ-CFGRF, a novel classifier-free guidance Rectified Flow generative model that integrates a specially designed Residual Seaformer, a novel Continuous Wavelet Transform-based feature extractor, and a creative Quality Enhancer. Unlike existing methods, SCQ-CFGRF transforms raw time-domain signals into richer time-frequency representations while leveraging Rectified Flow for superior sample quality and inference efficiency. Our approach first converts 1D time-domain data into 2D time-frequency heatmaps via a novel CFEN-block. Simultaneously, Rectified Flow is constructed to extract high-dimensional features. These are processed by a UNet backbone embedded with our RS-block to enhance feature representation. Category labels and time steps are fused to establish conditional dependencies, improving global spatiotemporal perception and enabling classifier-free guidance. Finally, our trained model employs a sampler with a QE-block to refine sample quality and perform synthesis via the Euler method of Rectified Flow. Experiments on two real-world bearing datasets and ablation studies demonstrate SCQ-CFGRF’s superiority in synthesis quality and inference speed. Even under an extreme 1:400 class imbalance, it achieves 78.75\% to 81.15\% diagnostic accuracy, surpassing existing methods. 
+Bearings are vital in industrial machinery, making fault diagnosis a crucial research area. However, the rarity of fault conditions leads to highly imbalanced signal data, biasing traditional methods toward normal states. To address this, we propose SCIF-CFGRF, a novel classifier-free guidance Rectified Flow generative model that integrates a specially designed Residual Seaformer, a novel Continuous Wavelet Transform-based feature extractor, and a creative Quality Enhancer. Unlike existing methods, SCIF-CFGRF transforms raw time-domain signals into richer time-frequency representations while leveraging Rectified Flow for superior sample quality and inference efficiency. Our approach first converts 1D time-domain data into 2D time-frequency heatmaps via a novel CFEN-block. Simultaneously, Rectified Flow is constructed to extract high-dimensional features. These are processed by a UNet backbone embedded with our RS-block to enhance feature representation. Category labels and time steps are fused to establish conditional dependencies, improving global spatiotemporal perception and enabling classifier-free guidance. Finally, our trained model employs a sampler with a QE-block to refine sample quality and perform synthesis via the Euler method of Rectified Flow. Experiments on two real-world bearing datasets and ablation studies demonstrate SCIF-CFGRF’s superiority in synthesis quality and inference speed. Even under an extreme 1:400 class imbalance, it achieves 78.75\% to 81.15\% diagnostic accuracy, surpassing existing methods. 
 ###
 The key contributions of this study are as follows:
 
-(1) We propose a new SCQ-CFGRF method framework, which introduces Rectified Flow into the field of fault diagnosis data synthesis for the first time and achieves fast, stable and high-quality synthesis of fault data samples. Meanwhile, two real-world experiments and ablation experiments demonstrate the superiority of our method.
+(1) We propose a new SCIF-CFGRF method framework, which introduces Rectified Flow into the field of fault diagnosis data synthesis for the first time and achieves fast, stable and high-quality synthesis of fault data samples. Meanwhile, two real-world experiments and ablation experiments demonstrate the superiority of our method.
 
-(2) In SCQ-CFGRF, in order to improve the signal feature extraction capability of the method framework, we specially designed a Continuous Wavelet Transform Feature Extraction Network block (CFEN-block). This block transforms the one-dimensional time domain signal into a two-dimensional time-frequency domain feature map through continuous wavelet transform and feature heat map formation, and then extracts various high-dimensional signal features through a deep learning network.
+(2) In SCIF-CFGRF, in order to improve the signal feature extraction capability of the method framework, we specially designed a Continuous Wavelet Transform Feature Extraction Network block (CFEN-block). This block transforms the one-dimensional time domain signal into a two-dimensional time-frequency domain feature map through continuous wavelet transform and feature heat map formation, and then extracts various high-dimensional signal features through a deep learning network.
 
 (3) In order to improve the quality and similarity of synthetic data, we embedded our newly designed Residual Seaformer block (RS-block) in the UNet backbone network of the method. According to the different levels in the network, they can be divided into RS1-block, RS2-block, and RS3-block. Through them, we can combine conditional and spatiotemporal information to improve the overall and detailed quality of synthetic data.
 
@@ -51,12 +51,12 @@ Solid State Drive：1TB
 
 It is recommended to use a higher configuration than this. The author's device uses shared memory to prevent out of GPU memory. It is recommended that readers use devices with more than 12GB of GPU memory to prevent program crashes or reduced model performance.
 
-## 6.Schematic diagram of the structure of SCQ-CFGRF and the framework of the entire method
+## 6.Schematic diagram of the structure of SCIF-CFGRF and the framework of the entire method
 
-![Example Image](Fig/SCQ-CFGRF-blocks.jpg)
-Fig.1 SCQ-CFGRF model and each block structure diagram.
+![Example Image](Fig/SCIF-CFGRF-blocks.jpg)
+Fig.1 SCIF-CFGRF model and each block structure diagram.
 
-![Example Image](Fig/SCQ-CFGRF.jpg)
+![Example Image](Fig/SCIF-CFGRF.jpg)
 Fig.2 Proposed methodological framework.
 
 ## 7.Results Visualization
@@ -111,25 +111,25 @@ Fig.8 GIF of the inference synthesis process on the SEU dataset at BR1:5.
 
 ![Example Image](Fig/time-3.bmp)
 
-Fig.8 Inference process efficiency comparison. (From top to bottom: SCQ-CFGRF, DDPM, DDIM.)
+Fig.8 Inference process efficiency comparison. (From top to bottom: SCIF-CFGRF, DDPM, DDIM.)
 
 ## 8.Citation method of this paper repository
 ###
 If your paper, research or project uses our research, please use this latex citation format:
 
-@misc{SCQ-CFGRF,
+@misc{SCIF-CFGRF,
   author = {Hongliang Dai, Dongjie Lin, Junpu He, Xinyu Fang, Siting Huang},
-  title = {SCQ-CFGRF},
+  title = {SCIF-CFGRF},
   year = {2025},
   publisher = {Zenodo},
   doi = {10.5281/zenodo.15083611},
-  url = {https://github.com/amstlldj/SCQ-CFGRF}
+  url = {https://github.com/amstlldj/SCIF-CFGRF}
 
 or
 
 @software{amstlldj_2025_15083611,
   author       = {Hongliang Dai, Dongjie Lin, Junpu He, Xinyu Fang, Siting Huang},
-  title        = {amstlldj/SCQ-CFGRF: Data Augmentation for Bearing
+  title        = {amstlldj/SCIF-CFGRF: Data Augmentation for Bearing
                    Fault Diagnosis Using a Novel Flow-Based
                    Generative Model
                   },
@@ -143,7 +143,7 @@ or
                    ;origin=https://doi.org/10.5281/zenodo.15083610;vi
                    sit=swh:1:snp:09a80b47e4c679e71b90b4020f498667ee45
                    bdbd;anchor=swh:1:rel:5fe1544ec3cdd61acd4dd183cbca
-                   44643218d6c5;path=amstlldj-SCQ-CFGRF-76a8de6
+                   44643218d6c5;path=amstlldj-SCIF-CFGRF-76a8de6
                   },
 }
 
