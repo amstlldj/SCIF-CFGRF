@@ -51,11 +51,11 @@ a diagnostic accuracy of 99.50% on synthetic samples while
 requiring only 6.97% of the inference time compared to the
 DDPM-based model.
 ###
-The key contributions of this study are as follows:
+The crucial contributions of this study are as follows:
 
 (1) We propose SCIF-CFGRF, a model that fuses
 spatiotemporal-conditional information via a CFEN-block and
-RS-block within a UNet backbone built upon RF. The CFENblock combines Continuous Wavelet Transform, RF, and a
+RS-block within a UNet backbone built upon RF. The CFEN-block combines Continuous Wavelet Transform, RF, and a
 feature extractor to model RF in the 2D time–frequency
 domain, generating feature heatmaps and high-dimensional
 representations. The RS-block further fuses these features and
@@ -70,12 +70,12 @@ industrial deployment.
 
 (3) We propose a novel Classifier-Free Guidance inference
 sampler and a QE-block based on spatiotemporal-conditional
-RF information fusion, which eliminates the need for explicit classifiers while enhancing both generation quality and
+RF information fusion, which eliminates the need for explicit classifiers while enhancing both generation quality and
 efficiency. The integration of the RF-based Euler synthesis
-method further improves performance and accelerates deployment.
+method further improves performance and accelerates deployment.
 
-(4) Experiments on 14 balanced datasets from two realworld bearing datasets show that SCIF-CFGRF surpasses
-mainstream methods in synthesis quality. Under 1:400 imbalance, it achieves a cosine similarity of 0.94 and a downstream
+(4) Experiments on 14 balanced datasets from two real world bearing datasets show that SCIF-CFGRF surpasses
+mainstream methods in synthesis quality. Under 1:400 imbalance, it achieves a cosine similarity of 0.94 and a downstream
 accuracy of 80%, with inference time reduced to 5% of
 DDPM.
 
