@@ -96,13 +96,13 @@ It is recommended to use a higher configuration than this. The author's device u
 ## 6.Schematic diagram of the structure of SCIF-CFGRF and the framework of the entire method
 
 ![Example Image](Fig/UNet-Sampler.bmp)
-Fig.1 SCIF-CFGRF model structure diagram.
+Fig.1 Proposed SCIF-CFGRF model structure diagram.
 
 ![Example Image](Fig/CFEN-1.bmp)
-Fig.2 CFEN-block structure diagram.
+Fig.2 Proposed CFEN-block structure diagram.
 
 ![Example Image](Fig/RS-1.bmp)
-Fig.3 RS-block structure diagram.
+Fig.3 Proposed RS-block structure diagram.
 
 ![Example Image](Fig/SCIF-CFGRF_method_framework_1(1).bmp)
 Fig.4 Proposed methodological framework.
@@ -158,8 +158,7 @@ Fig.9 GIF of the inference synthesis process on the SEU dataset at BR1:400.
 Fig.10 GIF of the inference synthesis process on the SEU dataset at BR1:5.
 
 ![Example Image](Fig/time-series-4.bmp)
-
-Fig.11 Inference process efficiency comparison. (From top to bottom: SCIF-CFGRF, DDPM, DDIM.)
+Fig.11 Inference process efficiency comparison. 
 
 ## 8.Citation method of this paper repository
 ###
