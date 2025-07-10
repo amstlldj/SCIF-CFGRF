@@ -25,26 +25,26 @@ generator.ipynb: This file is used to load and synthesize pre-trained files.
 
 ## 4.Abstracts of the papers to which this repository belongs
 ###
-Bearings are critical components in industrial machinery, making fault diagnosis essential for ensuring operational
+Bearings are critical components in industrial machinery, making fault diagnosis essential for ensuring operational
 reliability. Due to the rarity of fault conditions, the resulting
 signal data are extremely scarce compared to normal signal
 data, resulting in severe class imbalance and biasing traditional
 diagnostic methods toward the normal states. Researchers have
-turned to data augmentation to address the aforementioned challenge. However, existing approaches often struggle to capture the
+turned to data augmentation to address the aforementioned challenge. However, existing approaches often struggle to capture the
 correlations between spatiotemporal and conditional information
 and suffer from inefficiency. To address these limitations, we
 propose a novel Spatiotemporal-Conditional information fusion
-Classifier-Free Guidance Rectified Flow generative model (SCIFCFGRF). Specifically, the Continuous Wavelet Transform-based
+Classifier-Free Guidance Rectified Flow generative model (SCIF-CFGRF). Specifically, the Continuous Wavelet Transform-based
 Feature Extraction Network block and the Residual Seaformer
 block, both carefully designed and integrated into the UNet
 architecture, enable high-fidelity modeling of high-dimensional
-Rectified Flow (RF) representations in 2D time–frequency domain signal feature heatmaps, while simultaneously embedding
+Rectified Flow (RF) representations in 2D time–frequency domain signal feature heatmaps, while simultaneously embedding
 spatiotemporal-conditional information fusion. Furthermore, a
 dedicated loss function tailored to the characteristics of RF
 ensures fast and stable convergence during training. Finally,
-a novel spatiotemporal-conditional information fusion classifierfree guidance inference sampler and Quality Enhancer block
+a novel spatiotemporal-conditional information fusion classifier-free guidance inference sampler and Quality Enhancer block
 complete the efficient and high-quality synthesis of samples.
-Experiments on two real-world bearing fault datasets and extensive ablation studies demonstrate that SCIF-CFGRF significantly outperforms mainstream methods in terms of synthesis
+Experiments on two real-world bearing fault datasets and extensive ablation studies demonstrate that SCIF-CFGRF significantly outperforms mainstream methods in terms of synthesis
 quality and inference speed. Under a 1:5 class balance ratio,
 SCIF-CFGRF achieves a Cosine Similarity exceeding 0.94 and
 a diagnostic accuracy of 99.50% on synthetic samples while
