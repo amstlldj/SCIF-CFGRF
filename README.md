@@ -1,4 +1,4 @@
-# SCIF-CFGRF(Initial title of the paper:"Data Augmentation for Bearing Fault Diagnosis Using a Novel Flow-Based Generative Model for Information Fusion")
+# SCIF-CFGRF(Initial title of the paper:"Spatiotemporal-Conditional Information Fusion Classifier-FreeGuidance Rectified Flow Generative Model for Bearing Fault Diagnosis")
 
 ## 1.Copyright statement and update plan
 ### 1.1 Copyright statement and update plan
@@ -25,17 +25,59 @@ generator.ipynb: This file is used to load and synthesize pre-trained files.
 
 ## 4.Abstracts of the papers to which this repository belongs
 ###
-Bearings are vital in industrial machinery, making fault diagnosis a crucial research area. However, the rarity of fault conditions leads to highly imbalanced signal data, biasing traditional methods toward normal states. To address this, we propose SCIF-CFGRF, a novel classifier-free guidance Rectified Flow generative model that integrates a specially designed Residual Seaformer, a novel Continuous Wavelet Transform-based feature extractor, and a creative Quality Enhancer. Unlike existing methods, SCIF-CFGRF transforms raw time-domain signals into richer time-frequency representations while leveraging Rectified Flow for superior sample quality and inference efficiency. Our approach first converts 1D time-domain data into 2D time-frequency heatmaps via a novel CFEN-block. Simultaneously, Rectified Flow is constructed to extract high-dimensional features. These are processed by a UNet backbone embedded with our RS-block to enhance feature representation. Category labels and time steps are fused to establish conditional dependencies, improving global spatiotemporal perception and enabling classifier-free guidance. Finally, our trained model employs a sampler with a QE-block to refine sample quality and perform synthesis via the Euler method of Rectified Flow. Experiments on two real-world bearing datasets and ablation studies demonstrate SCIF-CFGRF’s superiority in synthesis quality and inference speed. Even under an extreme 1:400 class imbalance, it achieves 78.75\% to 81.15\% diagnostic accuracy, surpassing existing methods. 
+Bearings are critical components in industrial machinery, making fault diagnosis essential for ensuring operational
+reliability. Due to the rarity of fault conditions, the resulting
+signal data are extremely scarce compared to normal signal
+data, resulting in severe class imbalance and biasing traditional
+diagnostic methods toward the normal states. Researchers have
+turned to data augmentation to address the aforementioned challenge. However, existing approaches often struggle to capture the
+correlations between spatiotemporal and conditional information
+and suffer from inefficiency. To address these limitations, we
+propose a novel Spatiotemporal-Conditional information fusion
+Classifier-Free Guidance Rectified Flow generative model (SCIFCFGRF). Specifically, the Continuous Wavelet Transform-based
+Feature Extraction Network block and the Residual Seaformer
+block, both carefully designed and integrated into the UNet
+architecture, enable high-fidelity modeling of high-dimensional
+Rectified Flow (RF) representations in 2D time–frequency domain signal feature heatmaps, while simultaneously embedding
+spatiotemporal-conditional information fusion. Furthermore, a
+dedicated loss function tailored to the characteristics of RF
+ensures fast and stable convergence during training. Finally,
+a novel spatiotemporal-conditional information fusion classifierfree guidance inference sampler and Quality Enhancer block
+complete the efficient and high-quality synthesis of samples.
+Experiments on two real-world bearing fault datasets and extensive ablation studies demonstrate that SCIF-CFGRF significantly outperforms mainstream methods in terms of synthesis
+quality and inference speed. Under a 1:5 class balance ratio,
+SCIF-CFGRF achieves a Cosine Similarity exceeding 0.94 and
+a diagnostic accuracy of 99.50% on synthetic samples while
+requiring only 6.97% of the inference time compared to the
+DDPM-based model.
 ###
 The key contributions of this study are as follows:
 
-(1) We propose a new SCIF-CFGRF method framework, which introduces Rectified Flow into the field of fault diagnosis data synthesis for the first time and achieves fast, stable and high-quality synthesis of fault data samples. Meanwhile, two real-world experiments and ablation experiments demonstrate the superiority of our method.
+(1) We propose SCIF-CFGRF, a model that fuses
+spatiotemporal-conditional information via a CFEN-block and
+RS-block within a UNet backbone built upon RF. The CFENblock combines Continuous Wavelet Transform, RF, and a
+feature extractor to model RF in the 2D time–frequency
+domain, generating feature heatmaps and high-dimensional
+representations. The RS-block further fuses these features and
+spatiotemporal-conditional information to enable high-fidelity 
+signal modeling.
 
-(2) In SCIF-CFGRF, in order to improve the signal feature extraction capability of the method framework, we specially designed a Continuous Wavelet Transform Feature Extraction Network block (CFEN-block). This block transforms the one-dimensional time domain signal into a two-dimensional time-frequency domain feature map through continuous wavelet transform and feature heat map formation, and then extracts various high-dimensional signal features through a deep learning network.
+(2) We design an optimization loss tailored to the path
+and velocity characteristics of RF, facilitating faster and more
+stable training of the SCIF-CFGRF backbone. This enhances
+both synthesis quality and training efficiency, supporting rapid
+industrial deployment.
 
-(3) In order to improve the quality and similarity of synthetic data, we embedded our newly designed Residual Seaformer block (RS-block) in the UNet backbone network of the method. According to the different levels in the network, they can be divided into RS1-block, RS2-block, and RS3-block. Through them, we can combine conditional and spatiotemporal information to improve the overall and detailed quality of synthetic data.
+(3) We propose a novel Classifier-Free Guidance inference
+sampler and a QE-block based on spatiotemporal-conditional
+RF information fusion, which eliminates the need for explicit classifiers while enhancing both generation quality and
+efficiency. The integration of the RF-based Euler synthesis
+method further improves performance and accelerates deployment.
 
-(4) We fuse conditional and time step information throughout the network to strengthen conditional dependencies and global spatiotemporal perception, enabling classifier-free guidance. Additionally, our newly designed Quality Enhancer block (QE-block) refines final samples using a Cosine Similarity-based enhancement mechanism, improving synthesis quality and efficiency.
+(4) Experiments on 14 balanced datasets from two realworld bearing datasets show that SCIF-CFGRF surpasses
+mainstream methods in synthesis quality. Under 1:400 imbalance, it achieves a cosine similarity of 0.94 and a downstream
+accuracy of 80%, with inference time reduced to 5% of
+DDPM.
 
 ###
 In the future, we plan to test our method on additional industrial equipment, such as aircraft engines, chillers, and gearboxes. Moreover, we aim to explore its application in the financial sector for related research.
