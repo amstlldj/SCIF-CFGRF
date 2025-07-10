@@ -95,19 +95,25 @@ It is recommended to use a higher configuration than this. The author's device u
 
 ## 6.Schematic diagram of the structure of SCIF-CFGRF and the framework of the entire method
 
-![Example Image](Fig/SCQ-CFGRF-blocks.jpg)
-Fig.1 SCIF-CFGRF model and each block structure diagram.
+![Example Image](Fig/UNet-Sampler.bmp)
+Fig.1 SCIF-CFGRF model structure diagram.
 
-![Example Image](Fig/SCQ-CFGRF.jpg)
-Fig.2 Proposed methodological framework.
+![Example Image](Fig/CFEN-1.bmp)
+Fig.2 CFEN-block structure diagram.
+
+![Example Image](Fig/RS-1.bmp)
+Fig.3 RS-block structure diagram.
+
+![Example Image](Fig/Fig/SCIF-CFGRF_method_framework_1.pdf)
+Fig.4 Proposed methodological framework.
 
 ## 7.Results Visualization
 
 ![Example Image](Fig/cwru_result.jpg)
-Fig.3 Result on CWRU dataset.
+Fig.5 Result on CWRU dataset.
 
 ![Example Image](Fig/seu_result.jpg)
-Fig.4 Result on SEU dataset.
+Fig.6 Result on SEU dataset.
 
 ![Example Image](Fig/Gif/br1_400_cwru/batch_0_image_0_diffusion_process.gif)
 ![Example Image](Fig/Gif/br1_400_cwru/batch_1_image_0_diffusion_process.gif)
