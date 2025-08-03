@@ -201,8 +201,8 @@ If you plagiarize our research, we will pursue legal action.
 We will continue to improve the code comments of the project later.
 
 ## 10.Our other projects
-### 10.1 DSEA-SMOTE
-You can also follow our other fault data synthesis project DSEA-SMOTE (https://github.com/amstlldj/DSEA-SMOTE). The project will also be updated and maintained in the future.
+### 10.1 DLRSD-SMOTE
+You can also follow our other fault data synthesis project DLRSD-SMOTE (https://github.com/amstlldj/DLRSD-SMOTE). The project will also be updated and maintained in the future.
 
 ## 11.Contact us for cooperation or consultation
 ###
