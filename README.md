@@ -164,35 +164,16 @@ Fig.11 Inference process efficiency comparison.
 ###
 If your paper, research or project uses our research, please use this latex citation format:
 
-@misc{SCIF-CFGRF,
-  author = {Hongliang Dai, Dongjie Lin, Junpu He, Xinyu Fang, Siting Huang},
-  title = {SCIF-CFGRF},
-  year = {2025},
-  publisher = {Zenodo},
-  doi = {10.5281/zenodo.15083611},
-  url = {https://github.com/amstlldj/SCIF-CFGRF}
-
-or
-
-@software{amstlldj_2025_15083611,
-  author       = {Hongliang Dai, Dongjie Lin, Junpu He, Xinyu Fang, Siting Huang},
-  title        = {amstlldj/SCIF-CFGRF: Data Augmentation for Bearing
-                   Fault Diagnosis Using a Novel Flow-Based
-                   Generative Model
-                  },
-  month        = mar,
-  year         = 2025,
-  publisher    = {Zenodo},
-  version      = {v1.0.0},
-  doi          = {10.5281/zenodo.15083611},
-  url          = {https://doi.org/10.5281/zenodo.15083611},
-  swhid        = {swh:1:dir:f69d22d49556a2f0b882c1d34b8a1000e92fd8e4
-                   ;origin=https://doi.org/10.5281/zenodo.15083610;vi
-                   sit=swh:1:snp:09a80b47e4c679e71b90b4020f498667ee45
-                   bdbd;anchor=swh:1:rel:5fe1544ec3cdd61acd4dd183cbca
-                   44643218d6c5;path=amstlldj-SCIF-CFGRF-76a8de6
-                  },
-}
+@ARTICLE{11261892,
+  author={Dai, Hong-Liang and Lin, Dong-Jie},
+  journal={IEEE Transactions on Instrumentation and Measurement}, 
+  title={Spatiotemporal-Conditional Information Fusion Classifier-Free Guidance Rectified Flow Model for Bearing Fault Diagnosis}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Spatiotemporal phenomena;Radio frequency;Feature extraction;Fault diagnosis;Training;Continuous wavelet transforms;Diffusion models;Heating systems;Accuracy;Data models;Data imbalance;Fault diagnosis;Information Fusion;Deep Learning;Rectified Flow;Generative Models},
+  doi={10.1109/TIM.2025.3635328}}
 
 If you plagiarize our research, we will pursue legal action.
 
